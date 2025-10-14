@@ -309,6 +309,19 @@ body {
   word-wrap: break-word;
 }
 
+#graphics-panel {
+  margin: 2vh 0px 0.5vh 0px;
+  padding: 2vh 0px;
+}
+
+#graphics-panel h2 {
+  font-size: 22px;
+  color: var(--text-color);
+  font-family: "Questrial", sans-serif;
+  margin-bottom: 2vh;
+  word-wrap: break-word;
+}
+
 .internship-card {
   background: #f8f9fa;
   border-radius: 12px;
