@@ -1,0 +1,138 @@
+/* Simple Home Bar */
+.home-bar{
+  position: sticky; top: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 28px; background: rgba(255,255,255,1);
+  font-family: "Poppins", sans-serif;
+  margin: 0 200px 0 200px;
+}
+.home-left, .home-right{ display: flex; align-items: center; gap: 18px; }
+.home-right{ margin-left: auto; gap: 32px; }
+.home-link{ 
+  color: #000000 !important; 
+  text-decoration: none !important; 
+  font-weight: 350; 
+  font-size: 20px; 
+  font-family: "Poppins", sans-serif; 
+  border: none !important;
+  outline: none !important;
+}
+.home-link:hover, .home-link:focus, .home-link:visited, .home-link:active{ 
+  text-decoration: none !important; 
+  color: #000000 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Main Content */
+.main-content {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.container {
+  margin: 0 220px 0 220px;
+  padding: 0 20px;
+}
+
+.hero-section {
+  text-align: left;
+  padding: 60px 0;
+}
+
+
+.logo-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 1000px;
+  height: auto;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: #666666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.info-text{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin: 40px 0 0px 0;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.info-text .info-heading{
+  font-size: 20px;
+  letter-spacing: .3px;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+.data-text{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin: 140px 0 0px 0;
+  text-align: left;
+  line-height: 1.7;
+
+}
+
+.data-text .data-heading{
+  font-size: 20px;
+  letter-spacing: .3px;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+.data-image-section {
+  text-align: center;
+  padding: 100px 0 20px 0;
+}
+
+.data-image {
+  width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.metrics-text{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin: 140px 0 0px 0;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.metrics-text .metrics-heading{
+  font-size: 20px;
+  letter-spacing: .3px;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+main {
+  display: block;
+}
