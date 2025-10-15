@@ -76,6 +76,7 @@ body {
   color: var(--text-color);
   font-weight: bold;
   font-family: "Questrial", sans-serif;
+  margin-bottom: 3vh;
 }
 
 #profile_img {
@@ -232,18 +233,22 @@ body {
 }
 
 #introduction p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
   margin: 2vh 0px;
-  max-width: 80%;
+  max-width: 95%;
+}
+
+#introduction p:first-of-type {
+  margin-bottom: 3vh;
 }
 
 
 
 #education-panel {
-  margin: 2vh 0px;
+  margin: 4vh 0px;
   padding: 2vh 0px;
 }
 
@@ -252,7 +257,7 @@ body {
   color: var(--text-color);
   /* font-weight: bold; */
   font-family: "Questrial", sans-serif;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
   word-wrap: break-word;
 }
 
@@ -296,8 +301,21 @@ body {
   font-style: italic;
 }
 
+#research-panel {
+  margin: 4vh 31px 4vh 0px;
+  padding: 2vh 0px;
+}
+
+#research-panel h2 {
+  font-size: 22px;
+  color: var(--text-color);
+  font-family: "Questrial", sans-serif;
+  margin-bottom: 4vh;
+  word-wrap: break-word;
+}
+
 #internship-panel {
-  margin: 2vh 0px 0.5vh 0px;
+  margin: 4vh 31px 4vh 0px;
   padding: 2vh 0px;
 }
 
@@ -305,12 +323,35 @@ body {
   font-size: 22px;
   color: var(--text-color);
   font-family: "Questrial", sans-serif;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
   word-wrap: break-word;
 }
 
+.research-content {
+  position: relative;
+  z-index: 1;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.graphics-content {
+  position: relative;
+  z-index: 1;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  scale: 0.55;
+  margin-top: -110px;
+  margin-bottom: -110px;
+}
+
 #graphics-panel {
-  margin: 2vh 0px 0.5vh 0px;
+  margin: 4vh 31px 4vh 0px;
   padding: 2vh 0px;
 }
 
@@ -318,8 +359,51 @@ body {
   font-size: 22px;
   color: var(--text-color);
   font-family: "Questrial", sans-serif;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
   word-wrap: break-word;
+}
+
+.research_card {
+  background: #e3f2fd !important;
+}
+
+.research_card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(33, 150, 243, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(3, 169, 244, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 70%, rgba(0, 188, 212, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(0, 150, 136, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 60% 10%, rgba(255, 152, 0, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 10% 60%, rgba(76, 175, 80, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 70% 90%, rgba(121, 85, 72, 0.10) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.graphics_card {
+  background: #f3e5f5 !important;
+}
+
+.graphics_card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(156, 39, 176, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(233, 30, 99, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 70%, rgba(103, 58, 183, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(63, 81, 181, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 60% 10%, rgba(255, 87, 34, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 10% 60%, rgba(255, 193, 7, 0.12) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .internship-card {
@@ -330,6 +414,8 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
 }
 
 .internship-card::before {
@@ -368,6 +454,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0;
+  scale: 1.2;
+
 }
 
 .laptop-icon {
@@ -378,8 +466,17 @@ body {
   transform: scale(0.8);
 }
 
+.laptop-icon video,
+video.laptop-icon {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  object-fit: contain;
+  transform: scale(0.8);
+}
+
 #cv-panel {
-  margin: 0px 0px 2vh 0px !important;
+  margin: 0px 0px 4vh 0px !important;
   padding: 1vh 0px !important;
 }
 

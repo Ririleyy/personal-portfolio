@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Graphics Projects - Jiayi Li</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="graphics.css">
+  <link rel="icon" href="IMG_3815.jpg" type="image/jpeg">
+</head>
+<body>
+  <header class="home-bar">
+    <div class="home-left"><a href="index.html" class="home-link">Home</a></div>
+    <div class="home-right">
+      <a href="RenderCV_EngineeringResumes_Theme (2).pdf" target="_blank" class="home-link">CV</a>
+      <a href="index.html#introduction" class="home-link">About</a>
+    </div>
+  </header>
+  
+  <div id="container">
+    <div class="hero-section">
+      <h1 class="title">Projects</h1>
+      <p class="subtitle">Graphics and computational projects.</p>
+    </div>
+    
+    <main>
+      <section class="project-section">
+        <h2>Mesh Processing</h2>
+        <div class="project-content">
+          <p>Subdivision</p>
+          <div class="image-comparison">
+            <img src="Mesh/simplify.png" alt="Simplified mesh" class="comparison-image">
+            <span class="arrow">→</span>
+            <img src="Mesh/subdivision.png" alt="Subdivided mesh" class="comparison-image">
+          </div>
+          <p>Simplification</p>
+          <div class="image-comparison">
+            <img src="Mesh/cow.png" alt="Original mesh" class="comparison-image">
+            <span class="arrow">→</span>
+            <img src="Mesh/simplify_cow.png" alt="Simplified mesh" class="comparison-image">
+          </div>
+          <p>Remeshing</p>
+          <div class="image-comparison">
+            <img src="Mesh/bunny_simplify.png" alt="Remeshed bunny" class="comparison-image">
+            <span class="arrow">→</span>
+            <img src="Mesh/bunny_remesh.png" alt="Simplified bunny" class="comparison-image">
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>ARAP (As-Rigid-As-Possible)</h2>
+        <div class="project-content">
+          <p>ARAP deformation</p>
+          <div class="video-gallery">
+            <video src="Arap/armadillo.mov" controls class="gallery-video"></video>
+            <video src="Arap/teapot.mov" controls class="gallery-video"></video>
+            <video src="Arap/video3.mov" controls class="gallery-video"></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Path Tracer</h2>
+        <div class="project-content">
+          <p>Path tracing and rendering</p>
+          <div class="image-grid">
+            <div class="grid-item">
+              <img src="Path/cornell_box_direct_lighting_only.png" alt="Cornell Box Direct Lighting" class="grid-image">
+              <p class="image-caption">Cornell Box Direct Lighting Only</p>
+            </div>
+            <div class="grid-item">
+              <img src="Path/cornell_box_full_lighting.png" alt="Cornell Box Full Lighting" class="grid-image">
+              <p class="image-caption">Cornell Box Full Lighting</p>
+            </div>
+            <div class="grid-item">
+              <img src="Path/cornell_box_full_lighting_low_probability.png" alt="Cornell Box Low Probability" class="grid-image">
+              <p class="image-caption">Cornell Box Full Lighting Low Probability</p>
+            </div>
+            <div class="grid-item">
+              <img src="Path/glossy.png" alt="Glossy" class="grid-image">
+              <p class="image-caption">Glossy</p>
+            </div>
+            <div class="grid-item">
+              <img src="Path/mirror.png" alt="Mirror" class="grid-image">
+              <p class="image-caption">Mirror</p>
+            </div>
+            <div class="grid-item">
+              <img src="Path/refraction.png" alt="Refraction" class="grid-image">
+              <p class="image-caption">Refraction</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>FEM (Finite Element Method)</h2>
+        <div class="project-content">
+          <p>Finite element method simulations</p>
+          <div class="video-gallery">
+            <video src="FEM/video1.mov" controls class="gallery-video"></video>
+            <video src="FEM/video2.mov" controls class="gallery-video"></video>
+            <video src="FEM/video3.mov" controls class="gallery-video"></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>RealTime Rendering</h2>
+        <div class="project-content">
+          <p>A real-time natural environment renderer built with OpenGL, featuring procedurally generated infinite terrain, dynamic weather system, physically-based sky rendering, and animated water effects.</p>
+          <div class="youtube-container">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/AM1mzVqbfr4?start=2159" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Differentiable Rendering</h2>
+        <div class="project-content">
+          <p>We mostly implemented A Simple Approach to Differentiable Rendering of SDFs, by Zichen Wang, Xi Deng, Ziyi Zhang, Wenzel Jakob, and Steve Marschner.s</p>
+          <div class="single-image-container">
+            <img src="diffRender.png" alt="Differentiable Rendering" class="single-image">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
