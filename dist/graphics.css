@@ -14,12 +14,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
 
 /* Home Bar - same as beehive */
 .home-bar {
@@ -121,7 +115,7 @@ main {
 }
 
 .project-content {
-  font-size: 18px;
+  font-size: 22px;
   color: #666;
   line-height: 1.8;
 }
@@ -273,4 +267,24 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+.contact-footer{
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  margin: 140px 0 180px 0;
+}
+.contact-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px !important;
+}
+.contact-link:hover{ opacity: .9; }
+.contact-link span{ font-size: 14px !important; }
+.contact-icon{ width: 22px; height: 22px; display: inline-block; }
 
